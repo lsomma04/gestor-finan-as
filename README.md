@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gestor Financeiro Pessoal
 
-## Getting Started
+Aplicação web de gestão de finanças pessoais, desenvolvida
+em etapas como projeto de aprendizado full-stack.
 
-First, run the development server:
+## Estado atual
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Base inicial com Next.js, TypeScript strict e Tailwind CSS.
+A página inicial já possui conteúdo em português e visual escuro.
+
+As funcionalidades financeiras ainda não foram implementadas.
+
+## Tecnologias atuais
+
+- Next.js com App Router
+- React
+- TypeScript em modo strict
+- Tailwind CSS
+- ESLint
+
+## Requisitos
+
+- Node.js 24
+- npm
+- Git
+
+Os comandos abaixo usam `npm.cmd` e `npx.cmd` para execução
+no PowerShell do Windows.
+
+## Instalação
+
+Dentro da pasta do projeto, execute:
+
+```powershell
+npm.cmd ci
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esse comando instala as versões registradas no package-lock.json.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Desenvolvimento
 
-## Learn More
+```powershell
+npm.cmd run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Abra http://localhost:3000 no navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para parar o servidor, pressione Ctrl+C no terminal.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Verificações
 
-## Deploy on Vercel
+Verificar os tipos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```powershell
+npx.cmd tsc --noEmit
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Verificar o código com ESLint:
+
+```powershell
+npm.cmd run lint
+```
+
+Gerar a versão de produção:
+
+```powershell
+npm.cmd run build
+```
+
+## Estrutura inicial
+
+- src/app/page.tsx: página inicial.
+- src/app/layout.tsx: estrutura compartilhada das páginas.
+- src/app/globals.css: estilos globais e Tailwind.
+- tsconfig.json: configuração do TypeScript.
+- package.json: dependências e comandos do projeto.
+- package-lock.json: versões das dependências.
